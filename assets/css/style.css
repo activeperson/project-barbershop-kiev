@@ -337,6 +337,155 @@ section{
 .news-and-blog .small-silver{
 	margin-bottom: 12px;
 }
+.s__contacts, .AB__advertising{
+	width: 25%;
+	position: relative;
+}
+.AB__title{
+	font-family: Prata, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 27px;
+	color: #111111;
+	margin-bottom: 15px;
+}
+.s__table, .AB_left{
+	width: 75%;
+}
+.AB__text{
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 175%;
+	color: #505050;
+}
+.AB__advertising .title{
+	text-align: center;
+	font-family: Prata, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 27px;
+	color: #111111;
+}
+.AB__advertising{
+	margin-left: 30px;
+	border: 1px solid #D9D9D9;
+	border-radius: 2px;
+	padding: 15px;
+}
+.s__table td:nth-child(2){
+	text-align: right;
+}
+.s__text{
+	text-align: center;
+	margin-top: 20px;
+	font-family: Roboto, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 14px;
+	color: #505050;
+}
+.s__contacts .title{
+	padding-top: 25px;
+	text-align: center;
+	font-size: 23px;
+	line-height: 31px;
+}
+.s__contacts{
+	border: 1px solid #D9D9D9;
+	border-radius: 2px;
+	margin-left: 30px;
+	min-width: 250px;
+}
+.services .title{
+	margin-bottom: 25px;
+}
+.address{
+	background: url('../images/icons/map-pin.svg') no-repeat left;
+}
+.work-time{
+	background: url('../images/icons/clock.svg') no-repeat left;
+}
+.phone{
+	background: url('../images/icons/phone.svg') no-repeat left;
+}
+.s__wrapper-buttons a:first-child{
+	background: #D7B45C;
+}
+.s__wrapper-buttons a{
+	padding: 13px 15px;
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 15px;
+	text-decoration: none;
+
+	color: #464646;
+}
+.s__iframe {
+	width: 100%;
+	display: block;
+}
+.s__iframe iframe{
+	display: block;
+	width: 100%;
+}
+.s__wrapper-buttons{
+	margin: 0 13px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid #D7B45C;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+.s-contacts__links span{
+	color: #666666;
+}
+.s-contacts__links{
+	margin: 0 25px;
+	padding: 0 30px;
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	color: #000000;
+	margin-bottom: 15px;
+	line-height: 20px;
+}
+.services, .about-barber{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	margin-bottom: 70px;
+}
+.s__table td{
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 240.5%;
+	color: #000000;
+	padding: 10px 0;
+	border-bottom: 1px solid #E6E6E6;
+}
 .our-advantages{
 	background: #111111;
 	padding: 130px 50px;
@@ -548,14 +697,395 @@ a.telegram i{
 
 
 
+/*// DETAIL PAGE*/
 
+.detail__first-screen{
+	height: calc(100vh - 76px);
+	background: url('../images/barbershops-zaporozhye.jpg') no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+.detail__first-screen:after{
+	width: 100%;
+	height: 100%;
+	content: '';
+	position: absolute;
+	background: #111111;
+	opacity: 0.9;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.detail__first-screen:before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	display: block;
+	right: 0;
+	top: 0;
+	left: 0;
+	background: linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%);
+}
 
-
-
+.breadcrumbs a.active{
+	color: #FFFFFF;
+	opacity: 0.3;
+}
+.breadcrumbs a:not(:last-child){
+	margin-right: 13px;
+}
+.breadcrumbs a{
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 14px;
+	text-decoration: none;
+	color: #D7B45C;
+}
+.breadcrumbs{
+	padding-top: 13px;
+	position: relative;
+	z-index: 10;
+}
+.d__first-screen{
+	margin-top: 150px;
+	width: 80%;
+	position: relative;
+	z-index: 10;
+}
+.d__first-screen a, .features-left a{
+	margin-right: 20px;
+	display: inline-block;
+}
+.features{
+	margin-bottom: 60px;
+}
+.features-left a#on-site{
+	border-color: #111111;
+	color: #111111;
+}
+.d__first-screen .information__rating{
+	margin-bottom: 50px;
+}
+#write{
+	background: #D7B45C;
+	border-radius: 2px;
+	border-color: #D7B45C;
+	text-align: center;
+	padding-right: 30px;
+	color: #111111;
+	display: inline-block;
+}
+.features__r-text{
+	text-align: center;
+	position: absolute;
+	bottom: -30px;
+	width: 100%;
+	font-family: Roboto, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 15px;
+	color: #505050;
+}
+.features__right .wrapper-arrows{
+	position: absolute;
+	bottom: 0;
+	top: auto;
+}
+.d__first-screen .information__button{
+	text-align: center;
+	padding-right: 30px;
+	background-image: none;
+}
+.features__right{
+	position: relative;
+}
+.features__right .wrapper-arrows{
+	width: 100%;
+}
+#on-site{
+	background: transparent;
+	border-color: #D7B45C;
+	color: #D7B45C;
+	display: inline-block;
+	padding-right: 30px;
+}
+.features_r-wrapper img{
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+.features_r-wrapper{
+	max-height: 425px;
+	height: 100%;
+	position: relative;
+}
+.d-navigation{
+	padding: 20px 20px 0 20px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid #D9D9D9;
+}
+.d-navigation ul li.active{
+	color: #D7B45C;
+	border-bottom: 2px solid #D7B45C;
+}
+.d-navigation ul li a{
+	cursor: pointer;
+	color: #111111;
+	font-family: Prata, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 13px;
+	line-height: 18px;
+}
+.d-navigation ul li{
+	padding: 0 35px;
+	cursor: pointer;
+	padding-bottom: 15px;
+	font-family: Prata, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+}
+.features{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+.d-navigation ul{
+	display: -webkit-flex;
+	margin: 0 auto;
+	padding: 0;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: flex-start;
+	list-style-type: none;
+}
+.features-left{
+	width: 40%;
+}
+.f__item .f__name {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 240.5%;
+}
+.f__item{
+	margin-right: 30px;
+	padding-left: 40px;
+	background: url('../images/icons/wifi.svg') no-repeat left;
+	
+	margin-bottom: 20px;
+	color: #000000;
+}
+.f__wrapper-items{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.mobile-burger{
+	width: 26px;
+	height: 18px;
+	background: url('../images/icons/burger.svg') no-repeat center;
+	display: none;
+}
 
 
 @media(max-width: 1300px){
 	header, section{
 		padding: 30px 50px;
+	}
+	.detail-barber .title{
+		padding: 15px 25px;
+	}
+}
+@media(max-width: 1140px){
+	.mobile-burger{
+		display: block;
+		position: absolute;
+		left: 0;
+	}
+	.footer__wrap-social a:not(:last-child){
+		margin-right: 8px;
+	}
+	.detail__first-screen{
+		padding-top: 0;
+	}
+	header{
+		padding: 20px 50px;
+	}
+	.inner__header{
+		position: relative;
+	}
+	.inner__header{
+		justify-content: center;
+	}
+	.features-left{
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	.features{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.features__right{
+		width: 100%;
+	}
+	.features_r-wrapper{
+		max-height: 100%;
+	}
+	.d__first-screen{
+		width: 100%;
+		text-align: center;
+	}
+	.d-navigation ul{
+		justify-content: space-around;
+	}
+	ul.menu{
+		display: none;
+	}
+}
+@media(max-width: 768px){
+	header{
+		padding: 20px;
+	}
+	footer{
+		padding-top: 40px;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 50px;
+	}
+	.inner__footer, .footer__menus{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.footer__menus ul{
+		width: 100%;
+		display: block;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.footer__socials{
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+	.footer__logo{
+		width: 100%;
+		margin-right: 0;
+		border-bottom: 1px solid #2B2B2B;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.footer__copy, .footer__info{
+		display: none;
+	}
+	.f__item{
+		margin-right: 15px;
+	}
+	.detail-barber .title{
+		padding: 15px 20px;
+	}
+	section{
+		padding: 30px 20px;
+	}
+	.d-navigation ul li{
+		padding: 0 17px;
+		padding-bottom: 15px;
+	}
+}
+@media(max-width: 600px){
+	.s__table, .s__contacts{
+		width: 100%;
+	}
+	#on-site{
+		text-align: center;
+	}
+	.s__text{
+		margin-bottom: 20px;
+	}
+	.s__contacts{
+		margin-left: 0;
+	}
+	.services, .about-barber{
+		margin-bottom: 30px;
+	}
+	.AB_left, .AB__advertising{
+		width: 100%;
+	}
+	#write{
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	#on-site{
+		display: block;
+		width: 100%;
+	}
+	.AB__advertising{
+		margin-left: 0;
+		margin-top: 40px;
+	}
+	.about-barber{
+		padding-top: 0;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.services{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+}
+@media(max-width: 475px){
+	.d-navigation{
+		display: none;
+	}
+	#features{
+		padding-top: 40px;
+		margin-bottom: 0;
+	}
+	#services{
+		margin-bottom: 0;
+	}
+	.services, #reviews{
+		padding-top: 15px;
+	}
+	.about-barber{
+		margin-bottom: 0;
 	}
 }
